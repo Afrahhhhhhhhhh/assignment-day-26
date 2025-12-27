@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
@@ -8,9 +7,11 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden md:flex font-[Figtree] font-semibold items-center gap-8 text-sm">
-        <li><Link to="/">HOME</Link></li>
-        <li><Link to="/order">MENU</Link></li>
-        <li><Link to="/login" className="px-4 py-2 bg-[#F1DFE3] rounded-full">LOG-IN</Link></li>
+        <li><a href="/home">HOME</a></li>
+        <li><a href="/order">MENU</a></li>
+        <li>ABOUT US</li>
+        <li>PROMO</li>
+        <li className="px-4 py-2 bg-[#F1DFE3] rounded-full"><a href="/login">LOG-IN</a></li>
       </ul>
     </nav>
   )

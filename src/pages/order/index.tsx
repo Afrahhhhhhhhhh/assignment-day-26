@@ -1,5 +1,4 @@
 import { useState } from "react"
-import Navbar from "../components/Navbar"
 
 type Product = {
   name: string
@@ -63,7 +62,6 @@ const Order = () => {
 
   return (
     <div className="bg-[#F4F0EA] min-h-screen font-[Figtree]">
-      <Navbar />
 
       <section className="px-10 py-16 max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-2">
@@ -81,7 +79,9 @@ const Order = () => {
                 className="product-image"
               />
               <h3 className="product-title">{product.name}</h3>
-              <p className="product-price">Rp {product.price.toLocaleString()}</p>
+              <p className="product-price">
+  Rp {product.price.toLocaleString("id-ID")}
+</p>
 
               <div className="qty-wrapper">
                 <button
@@ -113,7 +113,7 @@ const Order = () => {
 
           <div className="flex justify-between font-semibold text-lg mb-6">
             <span>Total Price</span>
-            <span>Rp {totalPrice.toLocaleString()}</span>
+            <span>Rp {totalPrice.toLocaleString("id-ID")}</span>
           </div>
 
           <button

@@ -1,9 +1,8 @@
-import Navbar from "../components/Navbar"
+
 
 const Home = () => {
   return (
     <div className="bg-[#F4F0EA]">
-      <Navbar />
 
       {/* HERO */}
       <section className="bg-[#B28A66] px-4 md:px-10 py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center font-[Figtree]">
